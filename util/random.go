@@ -45,3 +45,8 @@ func RandomCurrency() string {
 	n := len(currencies)
 	return currencies[rand.Intn(n)]
 }
+
+// RandomAmountEntries generates a random amount in table entries
+func RandomAmountEntries() int64 {
+	return RandomInt(-1000, 1000)
+}
