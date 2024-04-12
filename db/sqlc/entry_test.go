@@ -35,7 +35,7 @@ func TestCreateEntry(t *testing.T) {
 	createRandomEntry(t)
 }
 
-func TestGetEnteries(t *testing.T) {
+func TestGetEntry(t *testing.T) {
 	entry1 := createRandomEntry(t)
 	entry2, err := testQueries.GetEntries(context.Background(), entry1.ID)
 
